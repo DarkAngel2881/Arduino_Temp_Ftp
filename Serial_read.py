@@ -5,8 +5,6 @@ from datetime import datetime
 from numpy import average
 
 # time of temp measurement
-
-
 def time():
     now = datetime.now()
     today = datetime.today()
