@@ -37,11 +37,11 @@ while True:
             temp = arduino.readline().decode().rstrip()
             # temp = input(">>> ")
             temps.append(float(temp))
-            print("Temp " + str(i) + ": \t" + temp + " \tC°\n")
-            f.write("Temp " + str(i) + ": \t" + temp + " \tC°\n")
+            print("Temp " + str(i) + ": \t" + temp + " \tC\n")
+            f.write("Temp " + str(i) + ": \t" + temp + " \tC\n")
             if i == 10:
                 f.write("\n--Average temp = " +
-                        str(round(average(temps), 2)) + " C°--")
+                        str(round(average(temps), 2)) + " C--")
             t.sleep(2)
             f.close
 
